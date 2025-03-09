@@ -1,20 +1,23 @@
+ spawn(function()
+    while true do
+        wait(5)  -- Check every 5 seconds
+        local player = game:GetService("Players").LocalPlayer
+        local endScreen = player.PlayerGui.GameGui:FindFirstChild("EndScreen")
+        if endScreen and endScreen.Visible then
+            print("EndScreen is visible. Teleporting...")
+            game:GetService("TeleportService"):Teleport(17720162456, player)
+            break  -- Exit the loop after teleporting
+        end
+    end
+end)
+ 
+ 
  -- Initial spawn of the first tower
 local args = {
     [1] = "fa609078-baec-4a98-b15d-e7dba01d8e57",
     [2] = CFrame.new(33.8105392, 8.50992775, -151.300278, -0.0192896146, -0, -0.999813974, -0, 1.00000012, -0, 0.999813974, 0, -0.0192896146) * CFrame.Angles(-3.1415927410125732, -8.742277657347586e-08, -3.1415927410125732)
 }
 game:GetService("ReplicatedStorage").Functions.SpawnNewTower:InvokeServer(unpack(args))
-
--- Check every 5 seconds if any part of the EndScreen is visible, and teleport if visible
-while true do
-    wait(5)
-    local player = game:GetService("Players").LocalPlayer
-    local endScreen = player.PlayerGui.GameGui:FindFirstChild("EndScreen")
-    if endScreen and endScreen.Visible then
-        game:GetService("TeleportService"):Teleport(17720162456, player)
-        break
-    end
-end
 
 -- Function to check Money and spawn other towers
 local function checkMoneyAndSpawnTowers()
