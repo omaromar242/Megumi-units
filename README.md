@@ -80,13 +80,13 @@ local function checkMoneyAndSpawnTowers()
     end
 
     -- Wait until Money reaches 1100 and then spawn the next tower
-    while money.Value < 1100 do
+    while money.Value < 1200 do
         wait(1)
     end
 
-    -- Once Money reaches 1100, spawn the specified tower
+    -- Once Money reaches 1200, spawn the specified tower
     local spawnArgs6 = {
-        [1] = "7723dcba-7ffe-4a32-a8a5-9e3d1ef331de",
+        [1] = "e2da94b6-1a33-4a2b-b835-f6012b449199",
         [2] = CFrame.new(40.0208664, 8.50992775, -152.431061, -1, 0, 0, 0, 1, 0, 0, 0, -1) * CFrame.Angles(-3.1415927410125732, -8.742277657347586e-08, -3.1415927410125732)
     }
     game:GetService("ReplicatedStorage").Functions.SpawnNewTower:InvokeServer(unpack(spawnArgs6))
@@ -104,14 +104,14 @@ local function checkMoneyAndSpawnTowers()
         game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(upgradeArgs3))
     end
 
-    -- Wait until Money reaches 6000 and then upgrade the SoulCurseAwk tower
-    while money.Value < 6000 do
+    -- Wait until Money reaches 6000 and then upgrade the StrongestSorcerer tower
+    while money.Value < 7600 do
         wait(1)
     end
 
-    -- Upgrade the SoulCurseAwk tower
+    -- Upgrade the StrongestSorcerer tower
     local upgradeArgs4 = {
-        [1] = workspace.Towers.SoulCurseAwk
+        [1] = workspace.Towers.StrongestSorcerer
     }
     game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(upgradeArgs4))
 
@@ -161,14 +161,14 @@ local function checkMoneyAndSpawnTowers()
     }
     game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(upgradeArgs8))
 
-    -- Wait until Money reaches 13200 and then upgrade SoulCurseAwk2
-    while money.Value < 13200 do
+    -- Wait until Money reaches 14200 and then upgrade StrongestSorcerer2
+    while money.Value < 14200 do
         wait(1)
     end
 
-    -- Upgrade SoulCurseAwk2
+    -- Upgrade StrongestSorcerer2
     local upgradeArgs9 = {
-        [1] = workspace.Towers.SoulCurseAwk2
+        [1] = workspace.Towers.StrongestSorcerer2
     }
     game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(upgradeArgs9))
 
@@ -183,36 +183,36 @@ local function checkMoneyAndSpawnTowers()
     }
     game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(upgradeArgs10))
 
-    -- Wait until Money reaches 22600 and then upgrade SoulCurseAwk3
-    while money.Value < 22600 do
+    -- Wait until Money reaches 22450 and then upgrade StrongestSorcerer3
+    while money.Value < 22450 do
         wait(1)
     end
 
-    -- Upgrade SoulCurseAwk3
+    -- Upgrade StrongestSorcerer3
     local upgradeArgs11 = {
-        [1] = workspace.Towers.SoulCurseAwk3
+        [1] = workspace.Towers.StrongestSorcerer3
     }
     game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(upgradeArgs11))
 
-    -- Wait until Money reaches 42100 and then upgrade SoulCurseAwk4
-    while money.Value < 42100 do
+    -- Wait until Money reaches 37600 and then upgrade StrongestSorcerer4
+    while money.Value < 37600 do
         wait(1)
     end
 
-    -- Upgrade SoulCurseAwk4
+    -- Upgrade StrongestSorcerer4
     local upgradeArgs12 = {
-        [1] = workspace.Towers.SoulCurseAwk4
+        [1] = workspace.Towers.StrongestSorcerer4
     }
     game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(upgradeArgs12))
 
-    -- Wait until Money reaches 79000 and then upgrade SoulCurseAwk5
-    while money.Value < 79000 do
+    -- Wait until Money reaches 79000 and then upgrade StrongestSorcerer4
+    while money.Value < 90000 do
         wait(1)
     end
 
-    -- Upgrade SoulCurseAwk5
+    -- Upgrade StrongestSorcerer4
     local upgradeArgs13 = {
-        [1] = workspace.Towers.SoulCurseAwk5
+        [1] = workspace.Towers.StrongestSorcerer4
     }
     game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(upgradeArgs13))
 end
