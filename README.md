@@ -49,7 +49,7 @@ local function checkMoneyAndSpawnTowers()
     -- Once Money reaches 1400, spawn the final tower
     local spawnArgs5 = {
         [1] = "304c85da-e481-4573-ba5b-96b9fef23cc3",
-        [2] = CFrame.new(-16.5268555, 24.3348408, -115.091232, -0.958722115, -0, -0.284344912, -0, 1, -0, 0.284344941, 0, -0.958721995)
+        [2] = CFrame.new(1.88026047, 51.8438568, -89.2314911, 0.0753080025, 0, -0.997160316, -0, 1, -0, 0.997160316, 0, 0.0753080025)
     }
     game:GetService("ReplicatedStorage").Functions.SpawnNewTower:InvokeServer(unpack(spawnArgs5))
 
@@ -87,7 +87,7 @@ local function checkMoneyAndSpawnTowers()
     -- Once Money reaches 1200, spawn the specified tower
     local spawnArgs6 = {
         [1] = "e2da94b6-1a33-4a2b-b835-f6012b449199",
-        [2] = CFrame.new(-23.2335968, 24.3818913, -99.0602188, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1) * CFrame.Angles(-3.1415927410125732, -8.742277657347586e-08, -3.1415927410125732)
+        [2] = CFrame.new(1.88026047, 51.8438568, -89.2314911, 0.0753080025, 0, -0.997160316, -0, 1, -0, 0.997160316, 0, 0.0753080025)
     }
     game:GetService("ReplicatedStorage").Functions.SpawnNewTower:InvokeServer(unpack(spawnArgs6))
 
