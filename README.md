@@ -212,7 +212,7 @@ local function checkMoneyAndSpawnTowers()
 
     -- Upgrade StrongestSorcerer4
     local upgradeArgs13 = {
-        [1] = workspace.Towers.StrongestSorcerer4
+        [1] = workspace.Towers.StrongestSorcerer5
     }
     game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(upgradeArgs13))
 end
