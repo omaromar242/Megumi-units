@@ -49,7 +49,7 @@ local function checkMoneyAndSpawnTowers()
     -- Once Money reaches 1400, spawn the final tower
     local spawnArgs5 = {
         [1] = "304c85da-e481-4573-ba5b-96b9fef23cc3",
-        [2] = CFrame.new(-37.7015648, 24.3348408, -125.250748, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1)
+        [2] = CFrame.new(-16.5268555, 24.3348408, -115.091232, -0.958722115, -0, -0.284344912, -0, 1, -0, 0.284344941, 0, -0.958721995)
     }
     game:GetService("ReplicatedStorage").Functions.SpawnNewTower:InvokeServer(unpack(spawnArgs5))
 
